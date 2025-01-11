@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    background-color: #fffaf5;
+}
+
+img {
+    background: none;
+}
+
+:root {
+    /* Font Families */
+    --ff-ultra: g-ultra;
+    --ff-thin: g-thin;
+    --ff-regular: g-regular;
+    --ff-medium: g-medium;
+    --ff-light: g-light;
+    --ff-extralight: g-extra-light;
+    --ff-book: g-book;
+    --ff-bold: g-bold;
+    --ff-black: g-black;
+
+    /* Font Size */
+    --fs-heading1: 3.5rem;
+    --fs-heading2: 1.3rem;
+    --fs-text1: 1.3rem;
+
+    --fs-var-heading: 12vw;
+    /* --fs-var-heading: 18vw; */
+
+    /* Colors */
+    --primary: #2d2d2d;
+    --background: #fffaf5;
+    --highlight1: #006bb7;
+    --highlight2: #6cb2df;
+
+    /* design */
+    --br: 10px;
+}
+
+/* Gloval CSS */
+.h-ultra {
+    font-family: var(--ff-ultra);
+}
+
+.h-medium {
+    font-family: var(--ff-medium);
+    font-size: var(--fs-heading2);
+}
+
+.h-light {
+    font-family: var(--ff-light);
+    line-height: 100%;
+}
+
+.p-bold-regular {
+    font-family: var(--ff-regular);
+    font-weight: bold;
+}
+
+.p-regular {
+    font-family: var(--ff-regular);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.highlight {
+    color: var(--highlight1);
+}
+
+/* SCROLL BAR */
+
+body::-webkit-scrollbar {
+    width: 5px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--highlight); /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+}

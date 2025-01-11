@@ -1,0 +1,63 @@
+.container {
+    height: auto;
+    width: 90%;
+    display: grid;
+    place-self: center;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hero-servicetime {
+    display: grid;
+    width: 100%;
+    justify-content: end;
+}
+
+.hero-location {
+    display: grid;
+    width: 100%;
+}
+
+.hero-socials {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.socials-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--primary);
+    border-radius: var(--br);
+    display: grid;
+    place-items: center;
+}
+
+.socials-icon > img {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+@media (min-width: 0px) {
+    .h-light {
+        font-size: var(--fs-var-heading);
+    }
+}
+
+@media (min-width: 481px) {
+}
+
+@media (min-width: 769px) {
+}
+
+@media (min-width: 1280px) {
+}

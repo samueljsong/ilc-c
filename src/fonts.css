@@ -1,0 +1,44 @@
+@font-face {
+    font-family: g-ultra;
+    src: url(./assets/fonts/Geomanist-Ultra-Webfont/geomanist-ultra-webfont.woff2);
+}
+
+@font-face {
+    font-family: g-thin;
+    src: url(./assets/fonts/Geomanist-Thin-Webfont/geomanist-thin-webfont.woff2);
+}
+
+@font-face {
+    font-family: g-regular;
+    src: url(./assets/fonts/Geomanist-Regular-Webfont/geomanist-regular-webfont.woff2);
+}
+
+@font-face {
+    font-family: g-medium;
+    src: url(./assets/fonts/Geomanist-Medium-Webfont/geomanist-medium-webfont.woff2);
+}
+
+@font-face {
+    font-family: g-light;
+    src: url(./assets/fonts/Geomanist-Light-Webfont/geomanist-light-webfont.woff2);
+}
+
+@font-face {
+    font-family: g-extra-light;
+    src: url(./assets/fonts/Geomanist-ExtraLight-Webfont/geomanist-extralight-webfont.woff2);
+}
+
+@font-face {
+    font-family: g-book;
+    src: url(./assets/fonts/Geomanist-Book-Webfont/geomanist-book-webfont.woff2);
+}
+
+@font-face {
+    font-family: g-bold;
+    src: url(./assets/fonts/Geomanist-Bold-Webfont/geomanist-bold-webfont.woff2);
+}
+
+@font-face {
+    font-family: g-black;
+    src: url(./assets/fonts/Geomanist-Black-Webfont/geomanist-black-webfont.woff2);
+}

@@ -1,0 +1,10 @@
+background color: #fffaf5
+
+--Text color options--
+1: #413f3c
+2: #6cb2df
+3: #2d2d2d
+3: #006bb7
+
+
+
