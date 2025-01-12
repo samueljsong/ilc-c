@@ -22,9 +22,6 @@ export const LandingPage = () => {
                         <div className="hero-img-container hic-1">
                             <img src={ex2} alt="" />
                         </div>
-                        <div className="hero-img-container hic-2">
-                            <img src={ex3} alt="" />
-                        </div>
                     </div>
 
                     <div className="hero-servicetime">
