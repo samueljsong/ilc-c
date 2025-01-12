@@ -1,6 +1,6 @@
 .container {
     height: auto;
-    width: 90%;
+    width: 100%;
     display: grid;
     place-self: center;
 }
