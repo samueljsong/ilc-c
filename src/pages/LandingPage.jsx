@@ -34,12 +34,14 @@ export const LandingPage = () => {
                             Ministry
                         </p>
                     </div>
+
                     <div className="hero-location">
                         <p className="p-bold-regular ">Location</p>
                         <p className="p-regular">
                             10045 154 Street Unit 5, Surrey BC
                         </p>
                     </div>
+
                     <div className="hero-socials">
                         <div className="socials-icon">
                             <img src={facebook} alt="" />
@@ -52,7 +54,6 @@ export const LandingPage = () => {
                         </div>
                     </div>
                 </section>
-                <footer></footer>
             </div>
         </>
     );
