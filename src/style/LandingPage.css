@@ -1,6 +1,6 @@
 .container {
     height: auto;
-    width: 100%;
+    width: 90%;
     display: grid;
     place-self: center;
 }
@@ -17,20 +17,48 @@
 
 .hero-title {
     width: 100%;
+    margin-bottom: 1rem;
 }
 
 .hero-images {
-    display: flex;
+    display: grid;
+    width: 100%;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
 }
 
-.hero-images > img {
-    width: 10rem;
+.hero-img-container {
+    width: 100%;
+    position: relative;
+    display: grid;
+    background: none;
+}
+
+.hero-img-container > img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.hic-1 {
+    position: relative;
+    z-index: 1;
+    left: 5%;
+    bottom: 12.5%;
+}
+
+.hic-2 {
+    position: relative;
+    justify-self: end;
+    z-index: 2;
+    right: 5%;
+    top: 12.5%;
 }
 
 .hero-servicetime {
     display: grid;
     width: 100%;
     justify-content: end;
+    margin-top: 1rem;
 }
 
 .hero-location {
@@ -72,4 +100,11 @@
 }
 
 @media (min-width: 1280px) {
+}
+
+@media (max-height: 600px) {
+    .hero-title {
+        height: auto;
+        margin-top: 5rem;
+    }
 }

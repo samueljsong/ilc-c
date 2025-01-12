@@ -13,17 +13,18 @@ export const LandingPage = () => {
             <div className="container">
                 <section className="hero">
                     <div className="hero-title">
-                        {/* <h1 className="h-medium">A place for everyone</h1> */}
                         <h1 className="h-medium">Lutheran Church</h1>
                         <h1 className="h-light">Together in Faith</h1>
                         <h1 className="h-light">United in Love.</h1>
-                        {/* <h1 className="h-light">A Place For</h1>
-                        <h1 className="h-light">Everyone.</h1> */}
                     </div>
 
                     <div className="hero-images">
-                        {/* <img src={ex2} alt="" />
-                        <img src={ex3} alt="" /> */}
+                        <div className="hero-img-container hic-1">
+                            <img src={ex2} alt="" />
+                        </div>
+                        <div className="hero-img-container hic-2">
+                            <img src={ex3} alt="" />
+                        </div>
                     </div>
 
                     <div className="hero-servicetime">
