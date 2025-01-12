@@ -59,17 +59,14 @@
     width: 1.5rem;
 }
 
-@media (min-width: 0px) {
+@media (max-width: 480px) {
     .h-light {
         font-size: var(--fs-var-heading);
     }
 }
 
-@media (min-width: 481px) {
+@media (max-width: 770px) {
 }
 
-@media (min-width: 769px) {
-}
-
-@media (min-width: 1280px) {
+@media (max-width: 1280px) {
 }
