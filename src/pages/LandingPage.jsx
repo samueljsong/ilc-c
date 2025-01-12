@@ -2,6 +2,8 @@ import "../style/LandingPage.css";
 import email from "../assets/images/email.png";
 import ig from "../assets/images/ig.png";
 import facebook from "../assets/images/facebook.png";
+import ex2 from "../assets/images/ex2.jpg";
+import ex3 from "../assets/images/ex3.jpg";
 
 export const LandingPage = () => {
     const api = import.meta.env.VITE_API;
@@ -18,6 +20,12 @@ export const LandingPage = () => {
                         {/* <h1 className="h-light">A Place For</h1>
                         <h1 className="h-light">Everyone.</h1> */}
                     </div>
+
+                    <div className="hero-images">
+                        {/* <img src={ex2} alt="" />
+                        <img src={ex3} alt="" /> */}
+                    </div>
+
                     <div className="hero-servicetime">
                         <p className="p-bold-regular ">Sunday Service Times</p>
                         <p className="p-regular">

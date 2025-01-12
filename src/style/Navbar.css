@@ -1,0 +1,21 @@
+.nav-container {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.logo-img-container {
+    height: 5rem;
+    width: 5rem;
+    display: grid;
+    place-items: center;
+}
+
+.logo-img-container > img {
+    object-fit: contain;
+    height: 5rem;
+    width: 300%;
+}

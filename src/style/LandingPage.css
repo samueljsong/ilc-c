@@ -15,6 +15,18 @@
     gap: 1rem;
 }
 
+.hero-title {
+    width: 100%;
+}
+
+.hero-images {
+    display: flex;
+}
+
+.hero-images > img {
+    width: 10rem;
+}
+
 .hero-servicetime {
     display: grid;
     width: 100%;
@@ -61,3 +73,5 @@
 
 @media (min-width: 1280px) {
 }
+
+@media (max-height: );

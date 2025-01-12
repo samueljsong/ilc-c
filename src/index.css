@@ -24,8 +24,8 @@ img {
     --fs-heading2: 1.3rem;
     --fs-text1: 1.3rem;
 
-    --fs-var-heading: 12vw;
-    /* --fs-var-heading: 18vw; */
+    --fs-var-heading: 100%;
+    --fs-var-heading: 11.5vw;
 
     /* Colors */
     --primary: #2d2d2d;
