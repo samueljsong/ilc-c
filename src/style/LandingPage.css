@@ -20,21 +20,13 @@
     width: 100%;
 }
 
-.hero-images {
-    display: grid;
+.hero-image {
     width: 100%;
 }
 
-.hero-img-container {
-    width: 100%;
-    display: grid;
-    background: none;
-}
-
-.hero-img-container > img {
+.hero-image > img {
     width: 100%;
     border-radius: 10px;
-    justify-self: center;
 }
 
 .hero-servicetime {

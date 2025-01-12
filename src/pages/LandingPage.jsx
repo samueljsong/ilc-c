@@ -18,10 +18,8 @@ export const LandingPage = () => {
                         <h1 className="h-light">United in Love.</h1>
                     </div>
 
-                    <div className="hero-images">
-                        <div className="hero-img-container hic-1">
-                            <img src={ex2} alt="" />
-                        </div>
+                    <div className="hero-image">
+                        <img src={ex2} alt="" />
                     </div>
 
                     <div className="hero-servicetime">
