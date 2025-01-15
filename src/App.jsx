@@ -11,13 +11,13 @@ import { Navbar } from "./components/Navbar";
 
 function App() {
     return (
-        <>
+        <div className="app-container">
             <Navbar />
             <Routes>
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/admin" element={<AdminLoginPage />} />
             </Routes>
-        </>
+        </div>
     );
 }
 
