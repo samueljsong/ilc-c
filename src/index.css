@@ -26,8 +26,8 @@ img {
     --fs-text1: 1.3rem;
 
     /* --fs-var-heading: 100%; */
-    /* --fs-var-heading: 11.5vw; */
-    --fs-var-heading: 10vw;
+    --fs-var-heading: 12.5vw;
+    /* --fs-var-heading: 10vw; */
 
     /* Colors */
     --primary: #2d2d2d;
@@ -35,8 +35,13 @@ img {
     --highlight1: #006bb7;
     --highlight2: #6cb2df;
 
+    --highlight3: #436e67;
+
     /* design */
     --br: 10px;
+
+    --btn-padding: 0.75rem 2.5rem 0.75rem 2.5rem;
+    /* --btn-padding: 1rem 2.5rem 1rem 2.5rem; */
 }
 
 /* Gloval CSS */
@@ -69,6 +74,10 @@ img {
 
 .highlight {
     color: var(--highlight1);
+}
+
+.button-pd {
+    padding: var(--btn-padding);
 }
 
 /* SCROLL BAR */

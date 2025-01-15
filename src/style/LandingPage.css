@@ -38,27 +38,6 @@
     width: 100%;
 }
 
-.hero-socials {
-    display: flex;
-    width: 100%;
-    gap: 1rem;
-    justify-content: center;
-}
-
-.socials-icon {
-    width: 2.5rem;
-    height: 2.5rem;
-    background-color: var(--primary);
-    border-radius: var(--br);
-    display: grid;
-    place-items: center;
-}
-
-.socials-icon > img {
-    height: 1.5rem;
-    width: 1.5rem;
-}
-
 @media (max-width: 480px) {
     .h-light {
         font-size: var(--fs-var-heading);

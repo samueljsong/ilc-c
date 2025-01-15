@@ -1,0 +1,12 @@
+.button-container {
+    display: grid;
+    place-self: center;
+    border-radius: 10px;
+
+    background-color: var(--highlight3);
+}
+
+.button-container > p {
+    background: none;
+    color: #ffffff;
+}
