@@ -36,7 +36,35 @@ export const LandingPage = () => {
                             3232 272 Street Aldergrove BC
                         </p>
                     </div>
-                    <Button />
+                    <Button text={"New Here?"} btn_class={"btn-blue"} />
+                </section>
+            </div>
+            <div className="full-container">
+                <section className="hero-about">
+                    <div className="hero-about-container">
+                        <h1 className="h-medium">
+                            Welcome to Lutheran Church!
+                        </h1>
+                        <p className="p-regular">
+                            Finding a church that feels like home can be a
+                            challenge—we understand. That’s why at Immanuel
+                            Lutheran Church, we aim to create a warm, welcoming
+                            space where you can explore faith, build
+                            relationships, and feel supported no matter where
+                            you’re at in life.
+                            <br />
+                            <br />
+                            Want to learn more about who we are, what we
+                            believe, and how we do life together? Click that
+                            “More About Us” button below. We’d love for you to
+                            discover what makes our church family unique and how
+                            you can be a part of it.
+                            <br />
+                            <br />
+                            Let’s walk this journey together—one step at a time.
+                        </p>
+                        <Button text="More About Us" btn_class={"btn-white"} />
+                    </div>
                 </section>
             </div>
         </>

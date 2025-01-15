@@ -2,11 +2,14 @@
     display: grid;
     place-self: center;
     border-radius: 10px;
+}
 
+.btn-blue {
+    color: #ffffff;
     background-color: var(--highlight1);
 }
 
-.button-container > p {
-    background: none;
-    color: #ffffff;
+.btn-white {
+    color: var(--primary);
+    background-color: var(--background);
 }

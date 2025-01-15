@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: #fffaf5;
 }
 
 img {
@@ -43,7 +42,7 @@ img {
     /* design */
     --br: 10px;
 
-    --btn-padding: 0.75rem 2.5rem 0.75rem 2.5rem;
+    --btn-padding: 0.75rem 2rem 0.75rem 2rem;
     /* --btn-padding: 1rem 2.5rem 1rem 2.5rem; */
 }
 
