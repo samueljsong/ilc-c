@@ -18,6 +18,17 @@ export const LandingPage = () => {
                         <h1 className="h-light">United in Love.</h1>
                     </div>
 
+                    {/* <div className="hero-title">
+                        <h1 className="h-medium">Lutheran Church</h1>
+                        <h1 className="h-light">Together in Faith</h1>
+                        <h1 className="h-light">United in Love.</h1>
+                        <h1 className="h-light">
+                            Through Faith alone, by Scripture alone, in Christ
+                            alone, by Grace alone!
+                        </h1>
+                        <h1 className="h-light">United in Love.</h1>
+                    </div>
+
                     <div className="hero-image">
                         <img src={ex2} alt="" />
                     </div>
@@ -25,12 +36,7 @@ export const LandingPage = () => {
                     <div className="hero-servicetime">
                         <p className="p-bold-regular ">Sunday Service Times</p>
                         <p className="p-regular">
-                            <span className="bold">9:00am</span> - Adult
-                            Ministry
-                        </p>
-                        <p className="p-regular">
-                            {" "}
-                            <span className="bold">12:00am</span> - Youth
+                            <span className="bold">10:00am</span> - Main
                             Ministry
                         </p>
                     </div>
@@ -38,7 +44,7 @@ export const LandingPage = () => {
                     <div className="hero-location">
                         <p className="p-bold-regular ">Location</p>
                         <p className="p-regular">
-                            10045 154 Street Unit 5, Surrey BC
+                            3232 272 Street Aldergrove BC
                         </p>
                     </div>
 
@@ -52,7 +58,7 @@ export const LandingPage = () => {
                         <div className="socials-icon">
                             <img src={email} alt="" />
                         </div>
-                    </div>
+                    </div> */}
                 </section>
             </div>
         </>

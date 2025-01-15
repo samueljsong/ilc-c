@@ -31,8 +31,9 @@ img {
     --fs-heading2: 1.3rem;
     --fs-text1: 1.3rem;
 
-    --fs-var-heading: 100%;
-    --fs-var-heading: 11.5vw;
+    /* --fs-var-heading: 100%; */
+    /* --fs-var-heading: 11.5vw; */
+    --fs-var-heading: 10vw;
 
     /* Colors */
     --primary: #2d2d2d;
