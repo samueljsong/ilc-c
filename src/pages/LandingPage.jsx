@@ -16,12 +16,6 @@ export const LandingPage = () => {
                         <h1 className="h-medium">Lutheran Church</h1>
                         <h1 className="h-light">Together in Faith</h1>
                         <h1 className="h-light">United in Love.</h1>
-                    </div>
-
-                    {/* <div className="hero-title">
-                        <h1 className="h-medium">Lutheran Church</h1>
-                        <h1 className="h-light">Together in Faith</h1>
-                        <h1 className="h-light">United in Love.</h1>
                         <h1 className="h-light">
                             Through Faith alone, by Scripture alone, in Christ
                             alone, by Grace alone!
@@ -58,7 +52,7 @@ export const LandingPage = () => {
                         <div className="socials-icon">
                             <img src={email} alt="" />
                         </div>
-                    </div> */}
+                    </div>
                 </section>
             </div>
         </>
