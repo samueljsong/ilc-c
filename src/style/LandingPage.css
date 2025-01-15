@@ -20,11 +20,26 @@
 
 .hero-image {
     width: 100%;
+    display: grid;
+    position: relative;
 }
 
 .hero-image > img {
-    width: 100%;
+    width: 60%;
     border-radius: 10px;
+}
+
+.hero-img-1 {
+    position: relative;
+    /* top: 12.5%; */
+    margin: 3rem 0rem 0rem 0rem;
+}
+
+.hero-img-2 {
+    position: absolute;
+    z-index: 4;
+    right: 0;
+    /* bottom: 12.5%; */
 }
 
 .hero-servicetime {
