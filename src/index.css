@@ -4,12 +4,6 @@
     background-color: #fffaf5;
 }
 
-body {
-    width: 100%;
-    height: auto;
-    display: grid;
-}
-
 img {
     background: none;
 }
@@ -78,16 +72,3 @@ img {
 }
 
 /* SCROLL BAR */
-
-body::-webkit-scrollbar {
-    width: 5px; /* width of the entire scrollbar */
-}
-
-body::-webkit-scrollbar-track {
-    background: transparent; /* color of the tracking area */
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: var(--highlight2); /* color of the scroll thumb */
-    border-radius: 20px; /* roundness of the scroll thumb */
-}
