@@ -51,6 +51,11 @@ img {
     font-family: var(--ff-ultra);
 }
 
+.h-regular {
+    font-family: var(--ff-regular);
+    color: #014677;
+}
+
 .h-medium {
     font-family: var(--ff-medium);
     font-size: var(--fs-heading2);

@@ -13,8 +13,8 @@ export const LandingPage = () => {
                 <section className="hero">
                     <div className="hero-title">
                         <h1 className="h-medium">Lutheran Church</h1>
-                        <h1 className="h-light">Together in Faith</h1>
-                        <h1 className="h-light">United in Love.</h1>
+                        <h1 className="h-regular">Together in Faith</h1>
+                        <h1 className="h-regular">United in Love.</h1>
                     </div>
 
                     <div className="hero-image">
@@ -65,6 +65,11 @@ export const LandingPage = () => {
                         </p>
                         <Button text="More About Us" btn_class={"btn-white"} />
                     </div>
+                </section>
+            </div>
+            <div className="container2">
+                <section className="fyp">
+                    <h1 className="h-regular ">Find Your Place</h1>
                 </section>
             </div>
         </>
