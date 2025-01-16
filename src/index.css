@@ -31,13 +31,14 @@ img {
     /* Colors */
     --primary: #2d2d2d;
     --background: #ffffff;
-    --highlight1: #006bb7;
+    /* --highlight1: #006bb7; */
     --highlight2: #6cb2df;
 
     /* --highlight3: #436e67; */
     --highlight3: #2266f7;
 
     --background2: #f7f8fa;
+    --highlight1: #014677;
 
     /* design */
     --br: 10px;

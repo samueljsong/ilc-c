@@ -1,8 +1,11 @@
 import "../style/LandingPage.css";
+import ex1 from "../assets/images/ex1.jpg";
 import ex2 from "../assets/images/ex2.jpg";
 import ex3 from "../assets/images/ex3.jpg";
+import camp from "../assets/images/camp.jpg";
 
 import { Button } from "../components/Button";
+import { FYPCard } from "../components/FYPCard";
 
 export const LandingPage = () => {
     const api = import.meta.env.VITE_API;
@@ -70,6 +73,16 @@ export const LandingPage = () => {
             <div className="container2">
                 <section className="fyp">
                     <h1 className="h-regular ">Find Your Place</h1>
+                    <FYPCard
+                        image={camp}
+                        smalltxt={"Check Our "}
+                        maintxt={"Events."}
+                    />
+                    <FYPCard
+                        image={ex1}
+                        smalltxt={"On the go"}
+                        maintxt={"Media."}
+                    />
                 </section>
             </div>
         </>
