@@ -31,14 +31,14 @@ img {
     /* Colors */
     --primary: #2d2d2d;
     --background: #ffffff;
-    /* --highlight1: #006bb7; */
+    --highlight1: #006bb7;
     --highlight2: #6cb2df;
 
     /* --highlight3: #436e67; */
     --highlight3: #2266f7;
 
     --background2: #f7f8fa;
-    --highlight1: #014677;
+    /* --highlight1: #014677; */
 
     /* design */
     --br: 10px;
@@ -55,6 +55,10 @@ img {
 .h-regular {
     font-family: var(--ff-regular);
     color: #014677;
+}
+
+.h-thin {
+    font-family: var(--ff-thin);
 }
 
 .h-medium {
@@ -86,6 +90,11 @@ img {
 
 .button-pd {
     padding: var(--btn-padding);
+}
+
+.boxshadow {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+        rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
 /* SCROLL BAR */

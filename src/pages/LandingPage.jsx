@@ -1,4 +1,7 @@
 import "../style/LandingPage.css";
+
+import { Link, useNavigate } from "react-router-dom";
+
 import ex1 from "../assets/images/ex1.jpg";
 import ex2 from "../assets/images/ex2.jpg";
 import ex3 from "../assets/images/ex3.jpg";
@@ -9,6 +12,10 @@ import { FYPCard } from "../components/FYPCard";
 
 export const LandingPage = () => {
     const api = import.meta.env.VITE_API;
+
+    const navigate = useNavigate();
+
+    const onNewHereButtonClickHandler = () => {};
 
     return (
         <>
@@ -39,7 +46,11 @@ export const LandingPage = () => {
                             3232 272 Street Aldergrove BC
                         </p>
                     </div>
-                    <Button text={"New Here?"} btn_class={"btn-blue"} />
+                    <Button
+                        text={"New Here?"}
+                        btn_class={"btn-blue"}
+                        location={"/new"}
+                    />
                 </section>
             </div>
             <div className="full-container">
@@ -66,7 +77,11 @@ export const LandingPage = () => {
                             <br />
                             Let’s walk this journey together—one step at a time.
                         </p>
-                        <Button text="More About Us" btn_class={"btn-white"} />
+                        <Button
+                            text="More About Us"
+                            btn_class={"btn-white"}
+                            location={"/about"}
+                        />
                     </div>
                 </section>
             </div>
@@ -77,12 +92,15 @@ export const LandingPage = () => {
                         image={camp}
                         smalltxt={"Check Our "}
                         maintxt={"Events."}
+                        location={"/events"}
                     />
                     <FYPCard
                         image={ex1}
                         smalltxt={"On the go"}
                         maintxt={"Media."}
+                        location={"/media"}
                     />
+                    <div></div>
                 </section>
             </div>
         </>

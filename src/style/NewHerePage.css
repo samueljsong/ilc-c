@@ -1,0 +1,44 @@
+.nhp-container {
+    margin-top: 6.5rem;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nhp-header {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 90%;
+}
+
+.new-title {
+    font-size: 10vw;
+}
+
+.nhp-info {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: var(--highlight1);
+    padding: 2rem 0 2rem 0;
+    color: var(--background);
+}
+
+.nhp-info-title {
+    font-size: 1.2rem;
+}
+
+.nhp-info-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.gmap-img {
+    width: 100%;
+}

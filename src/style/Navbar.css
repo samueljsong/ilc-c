@@ -7,6 +7,7 @@
     left: 0;
     z-index: 10;
     background-color: var(--background);
+    justify-content: space-between;
 }
 
 .logo-img-container {
@@ -20,4 +21,53 @@
     object-fit: contain;
     height: 5rem;
     width: 300%;
+}
+
+.nav-elements {
+    display: grid;
+}
+
+.bm-burger-button {
+    position: absolute;
+    right: 20px;
+    top: 2rem;
+    height: 1rem;
+    width: 1.5rem;
+    z-index: 1000; /* Ensure it is always clickable */
+}
+
+/* Change Burger Bars Color to Blue */
+.bm-burger-bars {
+    background: var(--highlight1); /* Set the color to blue */
+    height: 2px;
+}
+
+/* Hover effect for the burger bars */
+.bm-burger-bars:hover {
+    background: #0044cc; /* Darker blue on hover */
+}
+
+/* Background fade-out effect */
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    transition: background 0.3s ease; /* Smooth fade-in transition */
+}
+
+/* Menu Styles */
+.bm-menu {
+    background: var(--background); /* Keep the menu background dark */
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+}
+
+/* Menu Items */
+.bm-item {
+    display: inline-block;
+    color: var(--primary);
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.bm-item:hover {
+    color: #00bcd4; /* Lighter blue on hover */
 }

@@ -1,9 +1,13 @@
 import "../style/Button.css";
+import { Link, useNavigate } from "react-router-dom";
 
-export const Button = ({ text, btn_class }) => {
+export const Button = ({ text, btn_class, location }) => {
     return (
-        <div className={`button-container button-pd ${btn_class}`}>
+        <Link
+            className={`button-container button-pd ${btn_class}`}
+            to={location}
+        >
             <p className="p-regular bold">{text}</p>
-        </div>
+        </Link>
     );
 };
