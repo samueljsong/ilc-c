@@ -1,0 +1,10 @@
+.eventtag-container {
+    padding: 0.25rem 1rem 0.25rem 1rem;
+    background-color: var(--highlight1);
+    border-radius: 5px;
+}
+
+.eventtag-container > h1 {
+    font-size: 0.9rem;
+    color: var(--background);
+}

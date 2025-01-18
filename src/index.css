@@ -38,7 +38,7 @@ img {
     --highlight3: #2266f7;
 
     --background2: #f7f8fa;
-    /* --highlight1: #014677; */
+    --highlight4: #014677;
 
     /* design */
     --br: 10px;
@@ -54,7 +54,7 @@ img {
 
 .h-regular {
     font-family: var(--ff-regular);
-    color: #014677;
+    color: #006bb7;
 }
 
 .h-thin {
@@ -74,10 +74,12 @@ img {
 .p-bold-regular {
     font-family: var(--ff-regular);
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .p-regular {
     font-family: var(--ff-regular);
+    letter-spacing: 1px;
 }
 
 .bold {
