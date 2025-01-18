@@ -3,4 +3,5 @@
     height: auto;
     display: grid;
     gap: 5rem;
+    background-color: var(--background);
 }
