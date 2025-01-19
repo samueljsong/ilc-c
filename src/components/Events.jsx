@@ -1,4 +1,5 @@
 import "../style/Events.css";
+import ra from "../assets/images/ra.png";
 
 import { EventTags } from "./EventTags";
 
@@ -18,6 +19,7 @@ export const Events = ({ image, title, date, description }) => {
                     <h1 className="p-bold-regular eventcard-learnmore">
                         Learn More
                     </h1>
+                    <img src={ra} alt="" />
                 </div>
             </div>
         </div>
