@@ -23,7 +23,7 @@ export const LandingPage = () => {
                 <section className="hero">
                     <div className="hero-title">
                         <h1 className="h-medium">Lutheran Church</h1>
-                        <h1 className="h-regular lp-title">
+                        <h1 className=" lp-title">
                             Together in Faith United in Love.
                         </h1>
                     </div>
