@@ -12,7 +12,7 @@ export const Navbar = () => {
     };
 
     return (
-        <nav className="nav-container boxshadow">
+        <nav className="nav-container ">
             <div className="logo-container">
                 <div
                     className="logo-img-container"
