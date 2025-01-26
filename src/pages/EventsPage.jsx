@@ -1,5 +1,6 @@
 import "../style/EventsPage.css";
 import placeholder from "../assets/images/ex2.jpg";
+import placeholder2 from "../assets/images/temp1.png";
 
 import { Events } from "../components/Events";
 
@@ -25,6 +26,14 @@ export const EventsPage = () => {
                     date={"Every Thursdays"}
                     description={
                         "Every week ok Thursdays, come join us for bible study, choir practice and fellowship!"
+                    }
+                />
+                <Events
+                    image={placeholder2}
+                    title={"Gainer's Lunch"}
+                    date={"Every Third Thursdays"}
+                    description={
+                        "Every third Thursdays, come have fellowship with us at Gainer's Lunch!"
                     }
                 />
                 <div></div>

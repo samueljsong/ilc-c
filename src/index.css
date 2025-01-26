@@ -24,6 +24,15 @@ body {
     --ff-bold: g-bold;
     --ff-black: g-black;
 
+    --ff-rultra: r-bold;
+    --ff-rextrabold: r-extrabold;
+    --ff-rextralight: r-extralight;
+    --ff-rlight: r-light;
+    --ff-rmedium: r-medium;
+    --ff-rregular: r-regular;
+    --ff-rsemibold: r-semibold;
+    --ff-rbold: r-bold;
+
     /* Font Size */
     --fs-heading1: 3.5rem;
     --fs-heading2: 1.3rem;
@@ -80,11 +89,25 @@ body {
     font-family: var(--ff-regular);
     font-weight: bold;
     letter-spacing: 1px;
+    transform: scaleY(0.9);
 }
 
 .p-regular {
     font-family: var(--ff-regular);
     letter-spacing: 1px;
+    transform: scaleY(0.95);
+}
+
+.p-medium {
+    font-family: var(--ff-medium);
+    letter-spacing: 1px;
+    transform: scaleY(0.95);
+}
+
+.p-semibold {
+    font-family: var(--ff-regular);
+    letter-spacing: 1px;
+    transform: scaleY(0.95);
 }
 
 .bold {
