@@ -29,7 +29,7 @@ export const LandingPage = () => {
                     </div>
 
                     <div className="hero-image">
-                        <img src={ex2} className="hero-img-1" alt="" />
+                        <img src={ex1} className="hero-img-1" alt="" />
                         <img className="hero-img-2" src={ex3} alt="" />
                     </div>
 
@@ -96,7 +96,7 @@ export const LandingPage = () => {
                         location={"/events"}
                     />
                     <FYPCard
-                        image={ex1}
+                        image={ex2}
                         smalltxt={"On the go"}
                         maintxt={"Media."}
                         location={"/media"}
