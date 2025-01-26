@@ -1,0 +1,26 @@
+.mp-container {
+    width: 100%;
+    height: auto;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: #ffffff;
+}
+
+.mp-landing {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.mp-title {
+    font-size: 15vw;
+    line-height: 100%;
+    color: var(--highlight1);
+    letter-spacing: 1px;
+    font-family: var(--ff-medium);
+    transform: scaleY(0.85);
+}

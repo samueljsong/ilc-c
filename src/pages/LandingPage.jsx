@@ -23,8 +23,9 @@ export const LandingPage = () => {
                 <section className="hero">
                     <div className="hero-title">
                         <h1 className="h-medium">Lutheran Church</h1>
-                        <h1 className="h-regular">Together in Faith</h1>
-                        <h1 className="h-regular">United in Love.</h1>
+                        <h1 className="h-regular lp-title">
+                            Together in Faith United in Love.
+                        </h1>
                     </div>
 
                     <div className="hero-image">

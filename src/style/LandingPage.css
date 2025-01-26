@@ -86,6 +86,16 @@
     gap: 3rem;
 }
 
+.lp-title{
+    font-size: 15vw;
+    line-height: 110%;
+    color: var(--highlight1);
+    letter-spacing: 1px;
+    font-family: var(--ff-medium);
+    transform: scaleY(0.9);
+}
+}
+
 @media (max-width: 480px) {
     .h-light {
         font-size: var(--fs-var-heading);
