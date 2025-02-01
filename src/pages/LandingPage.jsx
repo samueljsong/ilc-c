@@ -15,8 +15,6 @@ export const LandingPage = () => {
 
     const navigate = useNavigate();
 
-    const onNewHereButtonClickHandler = () => {};
-
     return (
         <>
             <div className="container">
@@ -88,19 +86,23 @@ export const LandingPage = () => {
             </div>
             <div className="container2">
                 <section className="fyp">
-                    <h1 className="h-regular ">Find Your Place</h1>
-                    <FYPCard
-                        image={camp}
-                        smalltxt={"Check Our "}
-                        maintxt={"Events."}
-                        location={"/events"}
-                    />
-                    <FYPCard
-                        image={ex2}
-                        smalltxt={"On the go"}
-                        maintxt={"Media."}
-                        location={"/media"}
-                    />
+                    <h1 className="h-medium fyp-title">Find Your Place</h1>
+                    <div className="fyp-cards">
+                        <FYPCard
+                            image={camp}
+                            smalltxt={"Check Our "}
+                            maintxt={"Events."}
+                            location={"/events"}
+                        />
+                        <FYPCard
+                            image={ex2}
+                            smalltxt={"On the go"}
+                            maintxt={"Media."}
+                            location={"/media"}
+                        />
+                    </div>
+                    <div></div>
+                    <div></div>
                     <div></div>
                 </section>
             </div>
