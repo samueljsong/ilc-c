@@ -42,3 +42,46 @@
 .gmap-img {
     width: 100%;
 }
+
+@media (min-width: 771px) {
+    .nhp-header {
+        width: 60%;
+        height: 100%;
+    }
+
+    .new-title {
+        font-size: 5vw;
+    }
+
+    .nhp-info-container {
+        width: 60%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .nhp-info-text1,
+    .nhp-info-text2,
+    .nhp-info-text3 {
+        grid-column-start: 1;
+    }
+
+    .gmap-img {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        grid-row-end: 9;
+    }
+
+    .nhp-container {
+        height: 87vh;
+        width: 100%;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-rows: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    .nhp-info {
+        height: 100%;
+    }
+}

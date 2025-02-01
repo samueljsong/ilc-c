@@ -16,7 +16,6 @@ export const Navbar = () => {
 
     window.addEventListener("resize", () => {
         setWindowSize(window.innerWidth);
-        console.log(windowSize);
     });
 
     const closeMenu = () => setMenuOpen(false); // Function to close the menu

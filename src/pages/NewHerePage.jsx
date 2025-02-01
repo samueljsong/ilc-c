@@ -12,13 +12,13 @@ export const NewHerePage = () => {
             </section>
             <section className="nhp-info">
                 <div className="nhp-info-container">
-                    <div>
+                    <div className="nhp-info-text1">
                         <h1 className="p-bold-regular nhp-info-title">
                             Sunday Service
                         </h1>
                         <p className="p-regular">10:00AM - Main Service</p>
                     </div>
-                    <div>
+                    <div className="nhp-info-text2">
                         <h1 className="p-bold-regular nhp-info-title">
                             Address
                         </h1>
@@ -29,15 +29,12 @@ export const NewHerePage = () => {
                         </p>
                     </div>
                     <img src={gmap} alt="" className="gmap-img" />
-                    <div>
+                    <div className="nhp-info-text3">
                         <h1 className="p-bold-regular nhp-info-title">Email</h1>
                         <p className="p-regular">
                             immanuellutheranchurch@gmail.com
                         </p>
                     </div>
-                    <h1 className="p-bold-regular nhp-info-title">
-                        Immanuel Lutheran Church
-                    </h1>
                 </div>
             </section>
         </div>
