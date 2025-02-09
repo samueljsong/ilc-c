@@ -1,0 +1,42 @@
+.valuecard-container {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: grid;
+    place-items: center;
+}
+
+.valuecard-content {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem 0 3rem 0;
+}
+
+.valuecard-icon {
+    width: 3rem;
+}
+
+.valuecard-verse-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.valuecard-line {
+    background: var(--highlight1);
+    height: 4px;
+    width: 5rem;
+}
+
+@media (max-width: 480px) {
+}
+
+@media (max-width: 770px) and (min-width: 481px) {
+}
+
+@media (min-width: 771px) {
+}
