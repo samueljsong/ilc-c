@@ -8,6 +8,7 @@
     z-index: 10;
     background-color: var(--background);
     justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .logo-img-container {
@@ -15,6 +16,7 @@
     width: 5rem;
     display: grid;
     place-items: center;
+    cursor: pointer;
 }
 
 .logo-img-container > img {

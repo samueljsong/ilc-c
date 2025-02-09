@@ -1,5 +1,5 @@
 .container {
-    margin-top: 5.5rem;
+    margin-top: 8rem;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -94,6 +94,11 @@
     gap: 3rem;
 }
 
+.fyp-title {
+    font-weight: bold;
+    color: var(--highlight1);
+}
+
 .lp-title {
     font-size: 14vw;
     line-height: 110%;
@@ -111,11 +116,19 @@
     .h-regular {
         font-size: var(--fs-var-heading);
     }
+
+    .sub-title {
+        font-size: 7vw;
+    }
 }
 
 @media (max-width: 770px) and (min-width: 481px) {
     .lp-title {
         font-size: 10vw;
+    }
+
+    .sub-title {
+        font-size: 5vw;
     }
 }
 
@@ -165,11 +178,6 @@
         bottom: 30%;
     }
 
-    .fyp-title {
-        font-weight: bold;
-        color: var(--highlight1);
-    }
-
     .fyp-cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -182,6 +190,14 @@
     }
 
     .full-container {
+        margin-bottom: 5rem;
+    }
+
+    .sub-title {
+        font-size: 3rem;
+    }
+
+    .fyp-title {
         margin-bottom: 5rem;
     }
 }

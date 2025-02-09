@@ -1,9 +1,16 @@
 import "../style/NewHerePage.css";
 import gmap from "../assets/images/location3.png";
 
+import { motion } from "framer-motion";
+
 export const NewHerePage = () => {
     return (
-        <div className="nhp-container">
+        <motion.div
+            className="nhp-container"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: "0.50", delay: 0.25 }}
+        >
             <section className="nhp-header">
                 <h1 className="h-regular new-title">New Here?</h1>
                 <h1 className="h-medium">
@@ -37,6 +44,6 @@ export const NewHerePage = () => {
                     </div>
                 </div>
             </section>
-        </div>
+        </motion.div>
     );
 };

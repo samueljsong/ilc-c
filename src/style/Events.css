@@ -1,7 +1,7 @@
 .eventcard-container {
     width: 90%;
     padding: 1rem 0 1rem 0;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -9,6 +9,7 @@
     justify-content: center;
     gap: 1rem;
     background-color: var(--background);
+    cursor: pointer;
 }
 
 .eventcard-image {
@@ -38,11 +39,11 @@
 }
 
 .eventcard-description {
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .eventcard-learnmore {
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .eventcard-learnmore-container {
@@ -55,4 +56,22 @@
 
 .eventcard-learnmore-container > img {
     width: 1.5rem;
+}
+
+@media (max-width: 480px) {
+}
+
+@media (max-width: 770px) and (min-width: 481px) {
+}
+
+@media (min-width: 771px) and (max-width: 1799px) {
+    .eventcard-container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1800px) {
+    .eventcard-container {
+        width: 100%;
+    }
 }

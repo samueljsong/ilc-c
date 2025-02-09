@@ -6,21 +6,31 @@ import ex1 from "../assets/images/ex1.jpg";
 import ex2 from "../assets/images/ex2.jpg";
 import ex3 from "../assets/images/ex3.jpg";
 import camp from "../assets/images/camp.jpg";
+import bible from "../assets/images/bible.jpg";
 
 import { Button } from "../components/Button";
 import { FYPCard } from "../components/FYPCard";
+import { useRef } from "react";
+
+import { motion } from "framer-motion";
 
 export const LandingPage = () => {
     const api = import.meta.env.VITE_API;
-
     const navigate = useNavigate();
 
     return (
         <>
-            <div className="container">
+            <motion.div
+                className="container"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: "0.50", delay: 0.5 }}
+            >
                 <section className="hero">
                     <div className="hero-title">
-                        <h1 className="h-medium">Lutheran Church</h1>
+                        <h1 className="h-medium lp-subtitle">
+                            Lutheran Church
+                        </h1>
                         <h1 className=" lp-title">
                             Together in Faith United in Love.
                         </h1>
@@ -47,15 +57,15 @@ export const LandingPage = () => {
                     </div>
                     <Button
                         text={"New Here?"}
-                        btn_class={"btn-blue"}
+                        btn_class={"btn-blue hero-btn"}
                         location={"/new"}
                     />
                 </section>
-            </div>
+            </motion.div>
             <div className="full-container">
                 <section className="hero-about">
                     <div className="hero-about-container">
-                        <h1 className="h-medium">
+                        <h1 className="h-medium sub-title">
                             Welcome to Lutheran Church!
                         </h1>
                         <p className="p-regular">
@@ -76,6 +86,7 @@ export const LandingPage = () => {
                             <br />
                             Let’s walk this journey together—one step at a time.
                         </p>
+
                         <Button
                             text="More About Us"
                             btn_class={"btn-white"}
@@ -86,11 +97,13 @@ export const LandingPage = () => {
             </div>
             <div className="container2">
                 <section className="fyp">
-                    <h1 className="h-medium fyp-title">Find Your Place</h1>
+                    <h1 className="h-medium fyp-title sub-title">
+                        Find Your Place
+                    </h1>
                     <div className="fyp-cards">
                         <FYPCard
                             image={camp}
-                            smalltxt={"Check Our "}
+                            smalltxt={"Upcoming"}
                             maintxt={"Events."}
                             location={"/events"}
                         />
@@ -99,6 +112,12 @@ export const LandingPage = () => {
                             smalltxt={"On the go"}
                             maintxt={"Media."}
                             location={"/media"}
+                        />
+                        <FYPCard
+                            image={bible}
+                            smalltxt={"Learn more"}
+                            maintxt={"About Us."}
+                            location={"/about"}
                         />
                     </div>
                     <div></div>

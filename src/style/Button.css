@@ -3,6 +3,8 @@
     place-self: center;
     border-radius: 10px;
     text-decoration: none;
+    justify-self: center;
+    width: auto;
 }
 
 .btn-blue {

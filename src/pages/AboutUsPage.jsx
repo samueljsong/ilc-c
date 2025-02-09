@@ -5,6 +5,9 @@ import scriptureIcon from "../assets/images/values/bible.png";
 import jesusIcon from "../assets/images/values/cross.png";
 import graceIcon from "../assets/images/values/church.png";
 import faithIcon from "../assets/images/values/pray.png";
+import worship from "../assets/images/worship.png";
+
+import { motion } from "framer-motion";
 
 const scripture = {
     title: "Scripture Alone",
@@ -40,10 +43,15 @@ const faith = {
 
 export const AboutUsPage = () => {
     return (
-        <div className="aboutus-container">
+        <motion.div
+            className="aboutus-container"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: "0.50", delay: 0.25 }}
+        >
             <section className="aboutus-landing">
                 <p className="p-bold-regular">Get to know more</p>
-                <h1 className="h-medium mp-title">About Us</h1>
+                <h1 className="h-medium aboutus-title">About Us</h1>
                 <p className="p-regular">
                     Empowered by the Holy Spirit, Faith Lutheran Church (FLC)
                     shares with everyone the love and forgiveness of God through
@@ -51,13 +59,23 @@ export const AboutUsPage = () => {
                 </p>
             </section>
             <span className="separator"></span>
+            <h1 className="h-medium aboutus-ourvalues">Our Values</h1>
             <section className="aboutus-values-container">
-                <h1 className="h-medium">Our Values</h1>
                 <ValueCard card={scripture} />
                 <ValueCard card={jesus} />
                 <ValueCard card={grace} />
                 <ValueCard card={faith} />
             </section>
-        </div>
+            <h1 className="h-medium aboutus-ourvalues aboutus-worship-title">
+                Our Worship
+            </h1>
+            <img src={worship} alt="" className="aboutus-worship-icon" />
+            <div className="aboutus-worship">
+                <p className="p-bold-regular">
+                    Worship at Faith Lutheran is family-integrated, meaning both
+                    children and parents attend the same service
+                </p>
+            </div>
+        </motion.div>
     );
 };

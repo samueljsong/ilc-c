@@ -79,6 +79,7 @@
         align-items: center;
         grid-template-rows: 1fr 1fr;
         gap: 3rem;
+        margin-top: 8rem;
     }
 
     .nhp-info {

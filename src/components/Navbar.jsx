@@ -1,24 +1,41 @@
 import "../style/Navbar.css";
 import logo from "/logo.png";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { slide as Menu } from "react-burger-menu";
 import { Link, useNavigate } from "react-router-dom";
 
+import { motion } from "framer-motion";
+
 export const Navbar = () => {
     const navigate = useNavigate();
-    const [menuOpen, setMenuOpen] = useState(false); // State to manage menu open/close
-
-    const [windowSize, setWindowSize] = useState(window.innerWidth); // State to manage window size
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [windowSize, setWindowSize] = useState(window.innerWidth);
+    const menuRef = useRef(null); // Ref for the menu
 
     const onLogoClickHandler = () => {
         navigate("/");
     };
 
-    window.addEventListener("resize", () => {
-        setWindowSize(window.innerWidth);
-    });
+    useEffect(() => {
+        const handleResize = () => setWindowSize(window.innerWidth);
+        window.addEventListener("resize", handleResize);
 
-    const closeMenu = () => setMenuOpen(false); // Function to close the menu
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (menuRef.current && !menuRef.current.contains(event.target)) {
+                setMenuOpen(false); // Close the menu when clicking outside
+            }
+        };
+        document.addEventListener("mousedown", handleClickOutside);
+
+        return () =>
+            document.removeEventListener("mousedown", handleClickOutside);
+    }, []);
+
+    const closeMenu = () => setMenuOpen(false);
 
     return (
         <nav className="nav-container">
@@ -33,53 +50,77 @@ export const Navbar = () => {
                 {windowSize > 771 ? (
                     <div className="desktop-menu">
                         <Link className="p-bold-regular dm-item" to={"/"}>
-                            HOME
+                            <motion.p
+                                whileHover={{ scale: 1.05 }}
+                                transition={{ duration: 0.1 }}
+                                whileTap={{ scale: 0.98 }}
+                            >
+                                HOME
+                            </motion.p>
                         </Link>
                         <Link className="p-bold-regular dm-item" to={"/about"}>
-                            ABOUT
+                            <motion.p
+                                whileHover={{ scale: 1.05 }}
+                                transition={{ duration: 0.1 }}
+                                whileTap={{ scale: 0.98 }}
+                            >
+                                ABOUT
+                            </motion.p>
                         </Link>
                         <Link className="p-bold-regular dm-item" to={"/events"}>
-                            EVENTS
+                            <motion.p
+                                whileHover={{ scale: 1.05 }}
+                                transition={{ duration: 0.1 }}
+                                whileTap={{ scale: 0.98 }}
+                            >
+                                EVENTS
+                            </motion.p>
                         </Link>
                         <Link className="p-bold-regular dm-item" to={"/media"}>
-                            MEDIA
+                            <motion.p
+                                whileHover={{ scale: 1.05 }}
+                                transition={{ duration: 0.1 }}
+                                whileTap={{ scale: 0.98 }}
+                            >
+                                MEDIA
+                            </motion.p>
                         </Link>
                     </div>
                 ) : (
-                    <div className="burger-menu">
+                    <div className="burger-menu" ref={menuRef}>
                         <Menu
                             right
                             width={250}
-                            isOpen={menuOpen} // Control the menu's open/close state
-                            onStateChange={({ isOpen }) => setMenuOpen(isOpen)} // Sync state with menu changes
+                            isOpen={menuOpen}
+                            onStateChange={({ isOpen }) => setMenuOpen(isOpen)}
                         >
                             <Link
                                 className="menu-item p-bold-regular"
                                 to={"/"}
-                                onClick={closeMenu} // Close menu after clicking
+                                onClick={closeMenu}
                             >
-                                Home
+                                <p>Home</p>
                             </Link>
                             <Link
                                 className="menu-item p-bold-regular"
                                 to={"/about"}
-                                onClick={closeMenu} // Close menu after clicking
+                                onClick={closeMenu}
                             >
-                                About
+                                <p>About</p>
                             </Link>
                             <Link
                                 className="menu-item p-bold-regular"
                                 to={"/events"}
-                                onClick={closeMenu} // Close menu after clicking
+                                onClick={closeMenu}
                             >
-                                Events / News
+                                <p>Events / News</p>
                             </Link>
                             <Link
                                 className="menu-item p-bold-regular"
                                 to={"/media"}
-                                onClick={closeMenu} // Close menu after clicking
+                                onClick={closeMenu}
                             >
-                                Media
+                                <p>Media</p>
                             </Link>
                         </Menu>
                     </div>

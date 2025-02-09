@@ -1,6 +1,12 @@
-.fyp-card-container {
+.fyp-card {
     width: 90%;
     height: 25rem;
+    display: grid;
+}
+
+.fyp-card-container {
+    width: 100%;
+    height: 100%;
     background-position: center;
     background-size: cover;
     border-radius: 10px;
