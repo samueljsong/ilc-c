@@ -1,0 +1,32 @@
+.task-container {
+    display: grid;
+    width: 90%;
+    aspect-ratio: 1/1;
+    background-color: var(--highlight1);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    place-items: center;
+}
+
+.task-image {
+    width: 70%;
+    aspect-ratio: 1/1;
+}
+
+.task-name {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 480px) {
+}
+
+@media (max-width: 770px) and (min-width: 481px) {
+}
+
+@media (min-width: 771px) {
+    .task-container {
+        width: 20rem;
+    }
+}

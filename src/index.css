@@ -126,6 +126,10 @@ body {
         rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
+.form-input {
+    padding: 1rem;
+}
+
 /* SCROLL BAR */
 
 @media (max-width: 480px) {

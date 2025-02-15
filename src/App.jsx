@@ -10,6 +10,10 @@ import { AboutUsPage } from "./pages/AboutUsPage";
 import { EventsPage } from "./pages/EventsPage";
 import { MediaPage } from "./pages/MediaPage";
 import { Footer } from "./components/Footer";
+import { AdminPage } from "./pages/AdminPage";
+import { ErrorPage } from "./pages/ErrorPage";
+import { PostVideoPage } from "./pages/PostVideoPage";
+import { PostEventPage } from "./pages/PostEventPage";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
@@ -20,11 +24,15 @@ function App() {
                 <ScrollToTop></ScrollToTop>
                 <Routes>
                     <Route path="/" element={<LandingPage />} />
-                    <Route path="/admin" element={<AdminLoginPage />} />
+                    <Route path="/login" element={<AdminLoginPage />} />
+                    <Route path="/admin" element={<AdminPage />} />
                     <Route path="/new" element={<NewHerePage />} />
                     <Route path="/about" element={<AboutUsPage />} />
                     <Route path="/events" element={<EventsPage />} />
                     <Route path="/media" element={<MediaPage />} />
+                    <Route path="/admin/video" element={<PostVideoPage />} />
+                    <Route path="/admin/event" element={<PostEventPage />} />
+                    <Route path="*" element={<ErrorPage />} />
                 </Routes>
             </div>
             <Footer></Footer>

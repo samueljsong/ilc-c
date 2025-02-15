@@ -1,0 +1,29 @@
+.yt-content {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: left;
+}
+.yt-card-img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    display: grid;
+    border-radius: 10px;
+}
+
+.yt-card {
+    width: 100%;
+    padding: 1rem 0 1rem 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.yt-title {
+    font-size: 2rem;
+    color: var(--highlight1);
+}

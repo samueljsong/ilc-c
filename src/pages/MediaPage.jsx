@@ -1,5 +1,7 @@
 import "../style/MediaPage.css";
 
+import YouTubeCard from "../components/YoutubeCard";
+
 import { motion } from "framer-motion";
 
 export const MediaPage = () => {
@@ -11,8 +13,16 @@ export const MediaPage = () => {
             transition={{ duration: "0.50", delay: 0.25 }}
         >
             <div className="mp-landing">
-                <p className="p-bold-regular">Our Memories</p>
-                <h1 className="h-medium mp-title">Media</h1>
+                <div>
+                    <p className="p-bold-regular">Our Memories</p>
+                    <h1 className="h-medium mp-title">Media</h1>
+                </div>
+                <span className="separator"></span>
+                <div className="yt-card-container">
+                    <YouTubeCard />
+                    <YouTubeCard />
+                    <YouTubeCard />
+                </div>
             </div>
         </motion.div>
     );

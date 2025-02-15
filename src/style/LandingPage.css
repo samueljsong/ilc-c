@@ -108,6 +108,10 @@
     transform: scaleY(0.9);
 }
 
+.lp-subtitle {
+    font-size: 1.3rem;
+}
+
 @media (max-width: 480px) {
     .h-light {
         font-size: var(--fs-var-heading);
@@ -199,5 +203,9 @@
 
     .fyp-title {
         margin-bottom: 5rem;
+    }
+
+    .lp-subtitle {
+        font-size: 2rem;
     }
 }

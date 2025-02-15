@@ -49,11 +49,11 @@ export const AboutUsPage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: "0.50", delay: 0.25 }}
         >
-            <section className="aboutus-landing">
+            <section className="aboutus-landing aa">
                 <p className="p-bold-regular">Get to know more</p>
                 <h1 className="h-medium aboutus-title">About Us</h1>
-                <p className="p-regular">
-                    Empowered by the Holy Spirit, Faith Lutheran Church (FLC)
+                <p className="p-regular ">
+                    Empowered by the Holy Spirit, Immanuel Lutheran Church (ILC)
                     shares with everyone the love and forgiveness of God through
                     Jesus Christ, His Son, our Lord.
                 </p>
