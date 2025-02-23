@@ -3,19 +3,22 @@ import "../style/YoutubeCard.css";
 import { EventTags } from "./EventTags";
 import ra from "../assets/images/ra.png";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
-const YouTubeCard = () => {
-    const youtubeUrl = "https://youtu.be/xKgeIA7cDgE";
+const YouTubeCard = ({
+    thumbnail,
+    type,
+    title,
+    description,
+    link,
+    id,
+    date,
+}) => {
+    const navigate = useNavigate();
 
-    const extractVideoId = (url) => {
-        const regex =
-            /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:watch\?v=|embed\/|v\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
-        const match = url.match(regex);
-        return match ? match[1] : null;
+    const onCardClickHandler = () => {
+        // now navigate to video page
     };
-
-    const videoId = extractVideoId(youtubeUrl);
-    const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
 
     return (
         <motion.div
@@ -23,23 +26,20 @@ const YouTubeCard = () => {
             whileHover={{ y: -10 }}
             transition={{ duration: 0.2 }}
             whileTap={{ scale: 0.98, transition: { duration: 0.1 } }}
+            onClick={onCardClickHandler}
         >
             <div className="yt-content">
                 <img
-                    src={thumbnailUrl}
+                    src={thumbnail}
                     alt="YouTube Thumbnail"
                     className="yt-card-img"
                 />
                 <div className="yt-subsection">
-                    <EventTags type={"SERMON"} />
-                    <p className="p-bold-regular">FEBRUARY 12 13</p>
+                    <EventTags type={type} />
+                    <p className="p-bold-regular">{date}</p>
                 </div>
-                <h1 className="p-bold-regular eventcard-title">
-                    In Faith We Live
-                </h1>
-                <p className="p-regular eventcard-description">
-                    Timothy 1:7 - 2:1 : Learn about how God's love can help us
-                </p>
+                <h1 className="p-bold-regular eventcard-title">{title}</h1>
+                <p className="p-regular eventcard-description">{description}</p>
                 <div className="eventcard-learnmore-container">
                     <h1 className="p-bold-regular eventcard-learnmore">
                         Watch Now

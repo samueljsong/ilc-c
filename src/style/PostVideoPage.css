@@ -39,6 +39,7 @@
     background-color: var(--highlight1);
     border-radius: 5px;
     color: #ffffff;
+    cursor: pointer;
 }
 
 .pv-form-inputs {
