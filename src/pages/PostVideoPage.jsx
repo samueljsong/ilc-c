@@ -9,6 +9,7 @@ export const PostVideoPage = () => {
     const api = import.meta.env.VITE_API;
 
     const [formData, setFormData] = useState({
+        video_id: "",
         type: "",
         date: "",
         title: "",

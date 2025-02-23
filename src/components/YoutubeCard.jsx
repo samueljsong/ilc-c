@@ -17,7 +17,7 @@ const YouTubeCard = ({
     const navigate = useNavigate();
 
     const onCardClickHandler = () => {
-        // now navigate to video page
+        navigate(`/media/video/${id}`);
     };
 
     return (
