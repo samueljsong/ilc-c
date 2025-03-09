@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "../style/Events.css";
-import ra from "../assets/images/ra.png";
 import { EventTags } from "./EventTags";
 import { motion } from "framer-motion";
+import temp from "../assets/images/ex1.jpg";
 
 export const Events = ({ image, title, date, description }) => {
     const [isHovered, setIsHovered] = useState(false);
@@ -12,11 +12,15 @@ export const Events = ({ image, title, date, description }) => {
             className="eventcard-container"
             whileHover={{ y: -10 }}
             transition={{ duration: 0.2 }}
-            whileTap={{ scale: 0.98, transition: { duration: 0.1 } }}
             onHoverStart={() => setIsHovered(true)}
             onHoverEnd={() => setIsHovered(false)}
         >
-            <img src={image} alt="" className="eventcard-image" />
+            <img
+                src={image || temp}
+                alt=""
+                className="eventcard-image"
+                onError={(e) => (e.target.src = temp)}
+            />
             <div className="eventcard-tag-container">
                 <EventTags type={date} />
             </div>
@@ -36,9 +40,8 @@ export const Events = ({ image, title, date, description }) => {
                             color: isHovered ? "var(--highlight1)" : "#000",
                         }}
                     >
-                        Learn More
+                        Don't miss out—join us!
                     </h1>
-                    <img src={ra} alt="" />
                 </div>
             </div>
         </motion.div>

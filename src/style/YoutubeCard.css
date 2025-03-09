@@ -1,9 +1,11 @@
 .yt-content {
     display: flex;
+    min-height: 430px;
     width: 90%;
     flex-direction: column;
     gap: 0.5rem;
     text-align: left;
+    overflow-wrap: break-word;
 }
 
 .yt-card-img {
@@ -27,4 +29,8 @@
 .yt-title {
     font-size: 2rem;
     color: var(--highlight1);
+}
+
+.eventcard-title {
+    text-wrap: wrap;
 }
