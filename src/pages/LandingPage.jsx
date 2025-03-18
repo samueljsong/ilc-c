@@ -32,7 +32,7 @@ export const LandingPage = () => {
                             Immanuel Lutheran Church
                         </h1>
                         <h1 className=" lp-title">
-                            Together in Faith United in Love.
+                            Together in Faith United in God's Love.
                         </h1>
                     </div>
 
