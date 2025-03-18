@@ -1,4 +1,4 @@
-.admin-container {
+.manage-videos-container {
     width: 100%;
     height: auto;
     margin-top: 8rem;
@@ -10,29 +10,20 @@
     margin-bottom: 8rem;
 }
 
-.admin-landing {
+.manage-videos-landing {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     width: 90%;
 }
 
-.admin-title {
+.manage-videos-title {
     font-size: 15vw;
     line-height: 100%;
     color: var(--highlight1);
     letter-spacing: 1px;
     font-family: var(--ff-medium);
     transform: scaleY(0.85);
-}
-
-.admin-tasks-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    width: 90%;
-    max-width: 70rem;
 }
 
 @media (max-width: 480px) {
@@ -42,27 +33,18 @@
 }
 
 @media (min-width: 771px) {
-    .admin-landing {
+    .manage-videos-landing {
         align-items: center;
         width: 40rem;
         text-align: center;
     }
 
-    .admin-container {
+    .manage-videos-container {
         gap: 3rem;
         margin-top: 10rem;
     }
 
-    .admin-title {
+    .manage-videos-title {
         font-size: min(7rem, 10vw);
-    }
-
-    .admin-tasks-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        flex-direction: row;
-        width: 50rem;
-        gap: 3rem;
-        place-items: center;
     }
 }

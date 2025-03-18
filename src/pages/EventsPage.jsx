@@ -60,13 +60,13 @@ export const EventsPage = () => {
             transition={{ duration: "0.50", delay: 0.25 }}
         >
             <section className="ep-landing">
-                <h1 className="p-bold-regular ep-subtitle">Upcoming</h1>
+                {/* <h1 className="p-bold-regular ep-subtitle">Upcoming</h1> */}
                 <h1 className="h-medium ep-title">Events</h1>
-                <p className="p-regular">
+                {/* <p className="p-regular">
                     Immanuel Lutheran Church ministries meet throughout the week
                     to connect in various ways. Find out what's coming up and
                     consider joining us!
-                </p>
+                </p> */}
             </section>
             <span className="separator"></span>
             <h1 className="h-medium aboutus-ourvalues">Recurring Events</h1>

@@ -54,6 +54,9 @@ export const LandingPage = () => {
                         <p className="p-regular">
                             3232 272 Street Aldergrove BC
                         </p>
+
+                        <p className="p-bold-regular">Phone</p>
+                        <p className="p-regular">604 856 4710</p>
                     </div>
                     <Button
                         text={"New Here?"}
@@ -104,19 +107,19 @@ export const LandingPage = () => {
                         <FYPCard
                             image={camp}
                             smalltxt={"Upcoming"}
-                            maintxt={"Events."}
+                            maintxt={"Events"}
                             location={"/events"}
                         />
                         <FYPCard
                             image={ex2}
                             smalltxt={"On the go"}
-                            maintxt={"Media."}
+                            maintxt={"Media"}
                             location={"/media"}
                         />
                         <FYPCard
                             image={bible}
                             smalltxt={"Learn more"}
-                            maintxt={"About Us."}
+                            maintxt={"About Us"}
                             location={"/about"}
                         />
                     </div>

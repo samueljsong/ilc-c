@@ -15,6 +15,8 @@ import { ErrorPage } from "./pages/ErrorPage";
 import { PostVideoPage } from "./pages/PostVideoPage";
 import { PostEventPage } from "./pages/PostEventPage";
 import { VideoDetailsPage } from "./pages/VideoDetailsPage";
+import { ManageEventsPage } from "./pages/ManageEventsPage";
+import { ManageVideosPage } from "./pages/ManageVideosPage";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
@@ -33,6 +35,8 @@ function App() {
                     <Route path="/media" element={<MediaPage />} />
                     <Route path="/admin/video" element={<PostVideoPage />} />
                     <Route path="/admin/event" element={<PostEventPage />} />
+                    <Route path="/admin/manage/videos" element={<ManageVideosPage/>} />
+                    <Route path="/admin/manage/events" element={<ManageEventsPage/>} />
                     <Route
                         path="/media/video/:id"
                         element={<VideoDetailsPage />}

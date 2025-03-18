@@ -14,7 +14,7 @@ export const VideoDetailsPage = () => {
         >
             <div className="vdp-landing">
                 <div>
-                    <p className="p-bold-regular">Our Memories</p>
+                    {/* <p className="p-bold-regular">Our Memories</p> */}
                     <h1 className="h-medium vdp-title">Watch Now</h1>
                 </div>
                 <span className="separator"></span>

@@ -40,7 +40,7 @@ export const MediaPage = () => {
         >
             <div className="mp-landing">
                 <div>
-                    <p className="p-bold-regular">Our Memories</p>
+                    {/* <p className="p-bold-regular">Our Memories</p> */}
                     <h1 className="h-medium mp-title">Media</h1>
                 </div>
                 <span className="separator"></span>

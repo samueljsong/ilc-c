@@ -50,13 +50,13 @@ export const AboutUsPage = () => {
             transition={{ duration: "0.50", delay: 0.25 }}
         >
             <section className="aboutus-landing aa">
-                <p className="p-bold-regular">Get to know more</p>
+                {/* <p className="p-bold-regular">Get to know more</p> */}
                 <h1 className="h-medium aboutus-title">About Us</h1>
-                <p className="p-regular ">
+                {/* <p className="p-regular ">
                     Empowered by the Holy Spirit, Immanuel Lutheran Church (ILC)
                     shares with everyone the love and forgiveness of God through
                     Jesus Christ, His Son, our Lord.
-                </p>
+                </p> */}
             </section>
             <span className="separator"></span>
             <h1 className="h-medium aboutus-ourvalues">Our Values</h1>

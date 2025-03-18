@@ -18,7 +18,6 @@
     width: 100%;
     z-index: -1;
     position: relative;
-    background-color: var(--highlight1);
     top: 0.75rem;
     right: 0.75rem;
     border-radius: 10px;
@@ -29,7 +28,8 @@
     width: 100%;
     z-index: 2;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.274);
+    background-image: linear-gradient(0deg, #6cb2df, #006bb7);
+    border-radius: 10px;
     top: 0;
     border-radius: 10px;
 }
@@ -47,7 +47,9 @@
     right: 0;
     bottom: 0;
     margin: auto;
-    justify-content: end;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .fyp-info {
@@ -58,10 +60,10 @@
 
 .fyp-maintxt {
     letter-spacing: 3px;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .fyp-smalltxt {
     letter-spacing: 1px;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }

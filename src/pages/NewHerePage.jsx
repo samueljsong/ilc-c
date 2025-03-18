@@ -38,9 +38,11 @@ export const NewHerePage = () => {
                     <img src={gmap} alt="" className="gmap-img" />
                     <div className="nhp-info-text3">
                         <h1 className="p-bold-regular nhp-info-title">Email</h1>
-                        <p className="p-regular">
-                            immanuellutheranchurch@gmail.com
-                        </p>
+                        <p className="p-regular">immanuel4710@gmail.com</p>
+                    </div>
+                    <div className="nhp-info-text4">
+                        <h1 className="p-bold-regular nhp-info-title">Phone</h1>
+                        <p className="p-regular">604 856 4710</p>
                     </div>
                 </div>
             </section>

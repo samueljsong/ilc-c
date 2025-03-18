@@ -99,28 +99,28 @@ export const Navbar = () => {
                                 to={"/"}
                                 onClick={closeMenu}
                             >
-                                <p>Home</p>
+                                <p>HOME</p>
                             </Link>
                             <Link
                                 className="menu-item p-bold-regular"
                                 to={"/about"}
                                 onClick={closeMenu}
                             >
-                                <p>About</p>
+                                <p>ABOUT</p>
                             </Link>
                             <Link
                                 className="menu-item p-bold-regular"
                                 to={"/events"}
                                 onClick={closeMenu}
                             >
-                                <p>Events / News</p>
+                                <p>EVENTS</p>
                             </Link>
                             <Link
                                 className="menu-item p-bold-regular"
                                 to={"/media"}
                                 onClick={closeMenu}
                             >
-                                <p>Media</p>
+                                <p>MEDIA</p>
                             </Link>
                         </Menu>
                     </div>
