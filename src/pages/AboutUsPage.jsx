@@ -61,10 +61,10 @@ export const AboutUsPage = () => {
             <span className="separator"></span>
             <h1 className="h-medium aboutus-ourvalues">Our Values</h1>
             <section className="aboutus-values-container">
-                <ValueCard card={scripture} />
                 <ValueCard card={jesus} />
-                <ValueCard card={grace} />
                 <ValueCard card={faith} />
+                <ValueCard card={grace} />
+                <ValueCard card={scripture} />
             </section>
             <h1 className="h-medium aboutus-ourvalues aboutus-worship-title">
                 Our Worship
