@@ -20,7 +20,7 @@ export const PostEventPage = () => {
         recurringDetails: "",
         title: "",
         description: "",
-        createdDate: "",
+        created_date: "",
         thumbnail: "",
     });
 

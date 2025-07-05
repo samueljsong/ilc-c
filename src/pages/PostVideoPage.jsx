@@ -21,7 +21,7 @@ export const PostVideoPage = () => {
         title: "",
         description: "",
         link: "",
-        createdDate: "",
+        created_date: "",
         thumbnail: "",
     });
 

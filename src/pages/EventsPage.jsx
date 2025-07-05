@@ -74,10 +74,10 @@ export const EventsPage = () => {
                 {recurringEvents.map((event) => {
                     return (
                         <Events
-                            key={event.recurringEvent_id}
+                            key={event.recurring_event_id}
                             image={event.image_url}
                             title={event.title}
-                            date={event.recurringDetail}
+                            date={event.recurring_detail}
                             description={event.description}
                         />
                     );
@@ -91,7 +91,7 @@ export const EventsPage = () => {
                             key={event.event_id}
                             image={event.image_url}
                             title={event.title}
-                            date={event.expirationDate.split("T")[0]}
+                            date={event.created_date.split("T")[0]}
                             description={event.description}
                         />
                     );
