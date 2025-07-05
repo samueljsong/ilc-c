@@ -21,7 +21,7 @@ export const PostEventPage = () => {
         title: "",
         description: "",
         created_date: "",
-        thumbnail: "",
+        image_url: "",
     });
 
     const handleSubmit = async (e) => {
@@ -68,7 +68,7 @@ export const PostEventPage = () => {
             });
             setFormData((prev) => ({
                 ...prev,
-                thumbnail: response.data.secure_url,
+                image_url: response.data.secure_url,
             }));
         } catch (error) {
             console.error(
@@ -193,7 +193,7 @@ export const PostEventPage = () => {
                                     ? formData.recurringDetails
                                     : formData.date
                             }
-                            image={formData.thumbnail}
+                            image={formData.image_url}
                         />
                     </div>
                     <button className="create-btn p-bold-regular">
