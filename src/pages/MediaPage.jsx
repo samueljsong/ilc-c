@@ -51,7 +51,7 @@ export const MediaPage = () => {
                                 key={video.video_id}
                                 title={video.title}
                                 description={video.description}
-                                thumbnail={video.image_url}
+                                thumbnail={video.thumbnail}
                                 link={video.link}
                                 id={video.video_id}
                                 date={video.date}

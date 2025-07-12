@@ -22,7 +22,7 @@ export const PostVideoPage = () => {
         description: "",
         link: "",
         created_date: "",
-        image_url: "",
+        thumbnail: "",
     });
 
     const handleSubmit = async (e) => {
